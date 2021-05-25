@@ -1,0 +1,17 @@
+14.0.0.1 (12-11-2020): 1. picking is not going on done stage fixed issue.
+                       2. Stock is available then picking stage will be ready insted of the waiting fixed issue.
+
+
+14.0.0.2 (20-11-2020): Fixed the issue of date_expected field not available in stock.move model
+14.0.0.3 ==>added widget for image in pack products.
+
+14.0.0.4==>1.fixed the issue that product pack is not visible in pos screen.
+           2.fixed the issue that products of pack is not visible in pos screen orderline.
+           3.fixed the issue of products of pack is not printing on receipt.
+
+
+14.0.0.5 ==>1.fixed issue of received quantity is not update after validating receipt.
+         ==>2.fixed issue of js for pos order validation.
+14.0.0.6 ==>fixed issue of product access for user.
+14.0.0.7 ==>update method for creating picking from pos order according v14.
+14.0.0.8 ==>fixed issue of picking is not creating according given quantity.

@@ -1,0 +1,17 @@
+<odoo>
+    <record id="stock_product_returnable_action" model="ir.actions.act_window">
+        <field name="name">Returnable Products</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.product</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="search_view_id" ref="stock.stock_product_search_form_view"/>
+        <field name="domain">[('is_returnable_product', '=', True)]</field>
+        <field name="context">{'default_is_returnable_product':True}</field>
+    </record>
+
+    <menuitem id="menu_returnable_product"
+              name="Returnable Products"
+              parent="stock.menu_stock_inventory_control"
+              action="stock_product_returnable_action"
+              sequence="3"/>
+</odoo>
